@@ -1,0 +1,9 @@
+.anjian-split {height:32px;float:left;font-size:12px;}
+.anjian-btn {height:30px;width:31px;background-color:#fff;border:1px solid #CCC;padding-left:4px;padding-top:1px;float:left;font-family:verdana;margin-right:3px;margin-left:3px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;line-height:15px}
+#anjian_test {width:890px;height:250px;margin-right:auto;margin-left:auto;margin-top:40px;background-color:#323232;}
+#anjian_test_zuo {width:834px;float:left;margin-left:8px;}
+#anjian_test_you {width:38px;float:left;}
+#anjian_test_xia {width:872px;margin-right:auto;margin-left:auto;margin-bottom:60px;}
+#anjian_test_xia_zuo {float:left;margin-top:12px;margin-left:3px;color:#666;}
+#anjian_test_xia_you {float:right;margin-top:8px;margin-right:3px;}
+.anjian-btn{font-size:12px}

@@ -1,0 +1,14 @@
+#diffoutput table{table-layout:fixed}
+#diffoutput table td{word-break:break-all;word-wrap:break-word}
+#diffoutput table.diff{border-collapse:collapse;border:1px solid darkgray;min-width:100%}
+#diffoutput table.diff tbody{font-family:Courier,monospace}
+#diffoutput table.diff tbody th{font-family:verdana,arial,'Bitstream Vera Sans',helvetica,sans-serif;background:#EED;font-size:12px;font-weight:normal;border:1px solid #BBC;color:#886;padding:.3em .5em .1em 1em;text-align:right;vertical-align:top}
+#diffoutput table.diff thead{border-bottom:1px solid #BBC;background:#EFEFEF;font-family:Verdana}
+#diffoutput table.diff thead th.texttitle{text-align:left}
+#diffoutput table.diff tbody td{padding:0px .4em;padding-top:.4em;vertical-align:top;text-align:left}
+#diffoutput table.diff .empty{background-color:#DDD}
+#diffoutput table.diff .replace{background-color:#FD8}
+#diffoutput table.diff .delete{background-color:#E99}
+#diffoutput table.diff .skip{background-color:#EFEFEF;border:1px solid #AAA;border-right:1px solid #BBC}
+#diffoutput table.diff .insert{background-color:#9E9}
+#diffoutput table.diff th.author{text-align:right;border-top:1px solid #BBC;background:#EFEFEF}
