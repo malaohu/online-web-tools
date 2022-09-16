@@ -1,0 +1,100 @@
+---------------------------------------------------------------
+
+[2022-06-30T00:00:13+08:00] 103.85.84.160 GET tool.ruyo.net/index.php?s=admin/%5Cthink%5Capp/invokefunction&function=base64_encode&vars%5B%5D=ck996789baidu.com
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/admin.html
+---------------------------------------------------------------
+
+[2022-06-30T00:15:26+08:00] 218.66.6.74 GET tool.ruyo.net/static/style/fonts/glyphicons-halflings-regular.eot?
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/static.html
+---------------------------------------------------------------
+
+[2022-06-30T02:51:16+08:00] 27.124.6.187 GET tool.ruyo.net/index.php?s=/admin/index/dologin
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/admin.html
+---------------------------------------------------------------
+
+[2022-06-30T02:51:40+08:00] 27.124.6.187 GET tool.ruyo.net/index.php?s=/admin/index/dologin
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/admin.html
+---------------------------------------------------------------
+
+[2022-06-30T02:51:51+08:00] 27.124.6.187 GET tool.ruyo.net/index.php?s=/admin/index/dologin
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/admin.html
+---------------------------------------------------------------
+
+[2022-06-30T03:21:38+08:00] 49.232.6.201 GET tool.ruyo.net/readme.htm
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/readme.html
+---------------------------------------------------------------
+
+[2022-06-30T03:53:26+08:00] 49.232.6.201 GET tool.ruyo.net/admin/ecshopfiles.md5
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/admin.html
+---------------------------------------------------------------
+
+[2022-06-30T03:59:40+08:00] 121.33.69.99 GET tool.ruyo.net/static/style/fonts/glyphicons-halflings-regular.eot?
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/static.html
+---------------------------------------------------------------
+
+[2022-06-30T04:01:26+08:00] 27.124.37.119 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-06-30T04:17:42+08:00] 40.77.167.68 GET tool.ruyo.net/sitemap.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-06-30T04:32:25+08:00] 40.77.167.56 GET tool.ruyo.net/atom.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/atom.html
+---------------------------------------------------------------
+
+[2022-06-30T04:45:48+08:00] 111.173.114.141 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-06-30T04:52:48+08:00] 111.13.63.70 GET tool.ruyo.net:443//sitemap.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-06-30T04:56:20+08:00] 157.55.39.66 GET tool.ruyo.net/sitemap_index.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap_index.html
+---------------------------------------------------------------
+
+[2022-06-30T05:20:29+08:00] 207.46.13.144 GET tool.ruyo.net/sitemap.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-06-30T05:42:42+08:00] 207.46.13.159 GET tool.ruyo.net/sitemaps.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemaps.html
+---------------------------------------------------------------
+
+[2022-06-30T05:54:29+08:00] 111.173.114.209 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-06-30T05:57:00+08:00] 111.173.114.149 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-06-30T06:04:15+08:00] 157.90.181.219 GET tool.ruyo.net/sitemap
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-06-30T06:04:21+08:00] 157.90.181.219 GET tool.ruyo.net/sitemap.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-06-30T08:26:46+08:00] 121.232.10.7 GET tool.ruyo.net/static/style/fonts/glyphicons-halflings-regular.eot?
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/static.html
+---------------------------------------------------------------
+
+[2022-06-30T08:34:44+08:00] 111.173.115.102 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-06-30T15:29:52+08:00] 88.16.66.23 GET tool.ruyo.net//index.php?function=call_user_func_array&s=%2FIndex%2F%5Cthink%5Capp%2Finvokefunction&vars%5B0%5D=printf&vars%5B1%5D%5B%5D=77770123
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/Index.html
+---------------------------------------------------------------
+
+[2022-06-30T15:29:55+08:00] 181.73.26.96 POST tool.ruyo.net//index.php?s=captcha
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/captcha.html
+---------------------------------------------------------------
+
+[2022-06-30T15:30:00+08:00] 185.88.107.31 POST tool.ruyo.net//?s=captcha&test=-1
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/captcha.html

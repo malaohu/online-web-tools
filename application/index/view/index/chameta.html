@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>{$Think.config.web.chameta.title}</title>
+    <meta name="applicable-device" content="pc,mobile"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="{$Think.config.web.chameta.keywords}"/>
+    <meta name="description" content="{$Think.config.web.chameta.description}"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon"/>
+    <link href="/static/style/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/style/tool.css" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    {:$Think.config.web.header}
+</head>
+<body>{include file="header" /}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                    <ul class="nav nav-tabs hbflag">
+                        <li role="presentation"><a href="/checkweixin/">微信域名检测工具</a></li>
+                        <li role="presentation"><a href="/htaccess2nginx/">htaccess转nginx</a></li>
+                        <li role="presentation"><a href="/shortcut/">生成桌面快捷方式</a></li>
+                        <li role="presentation"><a href="/px2rem/">rem与px转换工具</a></li>
+                        <li role="presentation"><a href="/favicon/">在线制作ico图标</a></li>
+                        <li role="presentation"><a href="/createmeta/">生成网页Meta标签</a></li>
+                        <li role="presentation" class="active"><a href="/chameta/">Meta标签优化分析</a></li>
+                        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                                                                    href="javascript:;" role="button"
+                                                                    aria-haspopup="true" aria-expanded="false">更多工具<span
+                                class="caret"> </span></a>
+                            <ul class="dropdown-menu">
+                                <li role="presentation"><a href="/refresh/">在线定时刷新网址</a></li>
+                                <li role="presentation"><a href="/tiaoseban/">在线调色板</a></li>
+                                <li role="presentation"><a href="/gzip/">网站Gzip压缩检测</a></li>
+                                <li role="presentation"><a href="/checkurl/">网站死链检测</a></li>
+                                <li role="presentation"><a href="/whois/"> Whois查询工具</a></li>
+                                <li role="presentation"><a href="/chaicp/">ICP网站备案查询</a></li>
+                                <li role="presentation"><a href="/checkkeyword/">网页关键词密度检测</a></li>
+                                <li role="presentation"><a href="/webstatus/">HTTP状态码查询</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="panel">
+                        <form id="form1help" class="form-horizontal" method="post">
+                            <div class="form-group">
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="txt_url" name="txt_url" type="text" value="{$url}"
+                                           placeholder="输入要查询的网址，如：http://{$_SERVER.HTTP_HOST}"/>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <button type="submit" id="chameta" class="btn btn-success"
+                                            onclick="$('#chameta').text('正在查询Meta标签信息，请稍候……')">查询Meta标签信息
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="metachecktb">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th class="titcolor" width="17%">
+                                        标签
+                                    </th>
+                                    <th class="titcolor">
+                                        内容
+                                    </th>
+                                    <th class="titcolor" width="10%">
+                                        内容长度
+                                    </th>
+                                    <th class="titcolor" width="20%">
+                                        优化建议
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        网页标题（Title）
+                                    </td>
+
+                                    <td>
+                                        {if $title}{$title}{elseif $url}<font color="red">标题,获取失败</font>{else/}-{/if}
+                                    </td>
+                                    <td>
+                                        <font color="red">{$title_len}</font> 个字符
+                                    </td>
+                                    <td>
+                                        {if $title_len<81}
+                                        <font color="green">标题字符数量在合理范围</font>
+                                        {else/}
+                                        <font color="red">标题过长，建议不要超过80字符</font>
+                                        {/if}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        网页关键词（KeyWords）
+                                    </td>
+                                    <td>
+                                        {if $keywords}{$keywords}{elseif $url}<font color="red">关键字,获取失败</font>{else/}-{/if}
+                                    </td>
+                                    <td>
+                                        <font color="red">{$keywords_len}</font> 个字符
+                                    </td>
+                                    <td>
+                                        {if $keywords_len<101}
+                                        <font color="green">关键字数在合理范围</font>
+                                        {else/}
+                                        <font color="red">关键词过多，建议不要超过100字符</font>
+                                        {/if}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        内容描述（Description）
+                                    </td>
+                                    <td>
+                                        {if $description}{$description}{elseif $url}<font color="red">内容描述,获取失败</font>{else/}-{/if}
+                                    </td>
+                                    <td>
+                                        <font color="red">{$description_len}</font> 个字符
+                                    </td>
+                                    <td>
+                                        {if $description_len<201}
+                                        <font color="green">描述内容长度在合理范围</font>
+                                        {else/}
+                                        <font color="red">描述内容过长，建议不要超过200字符</font>
+                                        {/if}
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="alert alert alert-success alert-dismissible"><h4>Meta标签优化分析工具</h4>
+                    <p>为您提供网站Meta标签信息检测查询,可以快速检测网页的META标签，分析标题、关键词、描述等是否符合搜索引擎收录规范 。</p></div>
+                <div class="accordion-group"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/script/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/static/script/bootstrap.min.js" type="text/javascript"></script>
+<script src="/static/script/tool.js" type="text/javascript"></script>
+{include file="nav" /}
+{include file="link" /}
+{include file="footer" /}
+</body>
+</html>

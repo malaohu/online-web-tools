@@ -1,0 +1,72 @@
+---------------------------------------------------------------
+
+[2022-04-05T08:36:06+08:00] 148.251.121.247 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-05T08:36:11+08:00] 148.251.121.247 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-05T08:36:14+08:00] 148.251.121.247 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-05T16:57:12+08:00] 112.5.37.163 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-04-05T19:40:41+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:40:44+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:40:47+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:40:50+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:40:50+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:40:56+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:40:59+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:41:02+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:41:05+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:41:08+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:41:08+08:00] 223.72.62.156 GET tool.ruyo.net/refresh/?url=https%3A%2F%2Fjp.mercari.com%2Fsearch%3Fkeyword%3Ditzy%26order%3Ddesc%26sort%3Dcreated_time
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-04-05T19:49:44+08:00] 207.46.13.208 GET tool.ruyo.net/1.8.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/1.html
+---------------------------------------------------------------
+
+[2022-04-05T21:54:52+08:00] 157.55.39.89 GET tool.ruyo.net/1.9.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/1.html
+---------------------------------------------------------------
+
+[2022-04-05T23:19:04+08:00] 1.197.69.25 GET tool.ruyo.net/null
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/null.html

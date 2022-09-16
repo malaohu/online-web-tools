@@ -1,0 +1,85 @@
+---------------------------------------------------------------
+
+[2022-08-19T01:25:31+08:00] 223.101.207.138 POST tool.ruyo.net/favicon/
+[ error ] [8]未定义变量: icANDmask
+[ error ] [8]未定义数组下标: 0
+[ error ] [8]未定义数组下标: 31
+[ error ] [8]未定义数组下标: 30
+[ error ] [8]未定义数组下标: 29
+[ error ] [8]未定义数组下标: 28
+[ error ] [8]未定义数组下标: 27
+[ error ] [8]未定义数组下标: 26
+[ error ] [8]未定义数组下标: 25
+[ error ] [8]未定义数组下标: 24
+[ error ] [8]未定义数组下标: 23
+[ error ] [8]未定义数组下标: 22
+[ error ] [8]未定义数组下标: 21
+[ error ] [8]未定义数组下标: 20
+[ error ] [8]未定义数组下标: 19
+[ error ] [8]未定义数组下标: 18
+[ error ] [8]未定义数组下标: 17
+[ error ] [8]未定义数组下标: 16
+[ error ] [8]未定义数组下标: 15
+[ error ] [8]未定义数组下标: 14
+[ error ] [8]未定义数组下标: 13
+[ error ] [8]未定义数组下标: 12
+[ error ] [8]未定义数组下标: 11
+[ error ] [8]未定义数组下标: 10
+[ error ] [8]未定义数组下标: 9
+[ error ] [8]未定义数组下标: 8
+[ error ] [8]未定义数组下标: 7
+[ error ] [8]未定义数组下标: 6
+[ error ] [8]未定义数组下标: 5
+[ error ] [8]未定义数组下标: 4
+[ error ] [8]未定义数组下标: 3
+[ error ] [8]未定义数组下标: 2
+[ error ] [8]未定义数组下标: 1
+[ error ] [8]未定义数组下标: 0
+---------------------------------------------------------------
+
+[2022-08-19T01:28:14+08:00] 223.101.207.138 GET tool.ruyo.net/api/?type=single_url&id=33&url=https%3A%2F%2Fdmm.ink%2Fwp-content%2Fuploads%2F2022%2F08%2Fwechat.jpg
+[ error ] [8]iconv(): Detected an illegal character in input string
+---------------------------------------------------------------
+
+[2022-08-19T01:30:42+08:00] 223.101.207.138 GET tool.ruyo.net/refresh/?url=http%3A%2F%2Fwang
+[ error ] [0]variable type error： boolean
+---------------------------------------------------------------
+
+[2022-08-19T11:20:39+08:00] 40.77.167.2 GET tool.ruyo.net/sitemap.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-08-19T11:36:43+08:00] 157.55.39.8 GET tool.ruyo.net/atom.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/atom.html
+---------------------------------------------------------------
+
+[2022-08-19T12:01:30+08:00] 157.55.39.71 GET tool.ruyo.net/sitemap_index.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap_index.html
+---------------------------------------------------------------
+
+[2022-08-19T12:25:31+08:00] 157.55.39.176 GET tool.ruyo.net/sitemap.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-08-19T12:49:17+08:00] 157.55.39.17 GET tool.ruyo.net/sitemaps.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemaps.html
+---------------------------------------------------------------
+
+[2022-08-19T12:54:03+08:00] 157.55.39.176 GET tool.ruyo.net/sitemap.xml.gz
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-08-19T19:03:31+08:00] 157.90.181.219 GET tool.ruyo.net/sitemap
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-08-19T19:03:34+08:00] 157.90.181.219 GET tool.ruyo.net/sitemap.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-08-19T23:05:59+08:00] 222.187.232.124 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-08-19T23:10:21+08:00] 20.187.172.57 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html

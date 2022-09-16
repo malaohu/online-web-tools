@@ -1,0 +1,11 @@
+---------------------------------------------------------------
+
+[2022-03-20T15:26:42+08:00] 117.61.247.45 POST tooladmin.ruyo.net/index/web_cache.html
+[ error ] [2]rmdir(../runtime/cache): No such file or directory
+[ error ] [2]rmdir(../runtime/log/202203): No such file or directory
+[ error ] [2]rmdir(../runtime/log): No such file or directory
+[ error ] [2]rmdir(../runtime/temp): No such file or directory
+---------------------------------------------------------------
+
+[2022-03-20T19:08:42+08:00] 119.247.214.231 GET tool.ruyo.net/api/?type=single_url&id=4&url=http%3A%2F%2Fwhois.co%2F
+[ error ] [8]iconv(): Detected an illegal character in input string

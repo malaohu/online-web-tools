@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>{$Think.config.web.checkurl.title}</title>
+    <meta name="applicable-device" content="pc,mobile"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="{$Think.config.web.checkurl.keywords}"/>
+    <meta name="description" content="{$Think.config.web.checkurl.description}"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon"/>
+    <link href="/static/style/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/style/tool.css" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    {:$Think.config.web.header}
+</head>
+<body>{include file="header" /}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                    <ul class="nav nav-tabs hbflag">
+                        <li role="presentation"><a href="/checkweixin/">微信域名检测工具</a></li>
+                        <li role="presentation"><a href="/htaccess2nginx/">htaccess转nginx</a></li>
+                        <li role="presentation"><a href="/shortcut/">生成桌面快捷方式</a></li>
+                        <li role="presentation"><a href="/px2rem/">rem与px转换工具</a></li>
+                        <li role="presentation"><a href="/favicon/">在线制作ico图标</a></li>
+                        <li role="presentation"><a href="/createmeta/">生成网页Meta标签</a></li>
+                        <li role="presentation" class="active"><a href="/checkurl/">网站死链检测</a></li>
+                        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button" aria-haspopup="true" aria-expanded="false">更多工具<span class="caret"> </span></a>
+                            <ul class="dropdown-menu">
+                                <li role="presentation"><a href="/refresh/">在线定时刷新网址</a></li>
+                                <li role="presentation"><a href="/tiaoseban/">在线调色板</a></li>
+                                <li role="presentation"><a href="/gzip/">网站Gzip压缩检测</a></li>
+                                <li role="presentation"><a href="/whois/"> Whois查询工具</a></li>
+                                <li role="presentation"><a href="/chaicp/">ICP网站备案查询</a></li>
+                                <li role="presentation"><a href="/chameta/">Meta标签优化分析</a></li>
+                                <li role="presentation"><a href="/checkkeyword/">网页关键词密度检测</a></li>
+                                <li role="presentation"><a href="/webstatus/">HTTP状态码查询</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="panel">
+                        <input id="TextArea2" rows="12" style="width:60%;float:left;display:inline" class="form-control"
+                               placeholder="请输入要检测的链接"/>
+                        <button id="btn" style="margin-left: 10px;" class="btn btn-warning" onclick="get_data(1)">
+                            立即检测死链
+                        </button> &nbsp;&nbsp;&nbsp;&nbsp;<a href="/pagecode/" target="_blank">HTTP状态码解释</a>
+                        <span id="searchcount" class="maintopright"></span>
+                        <a id="dlink" style="display:none;"></a>
+                        <div id="rtval" class="fullhidden">
+                            <table class="table table-bordered table-striped" style="margin-top:20px">
+                                <thead>
+                                <tr>
+                                    <th width="60">序号</th>
+                                    <th class="th61">网页标题</th>
+                                    <th class="th60">检测的网址</th>
+
+                                    <th class="th62">检测状态</th>
+                                </tr>
+                                </thead>
+                                <tbody id="data">
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="pull-right">
+                                    <ul id="count" class="pagination"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert alert-success alert-dismissible"><h4>网站死链检测查询工具</h4>
+                    <p>为您提供网站死链检查,检测网站有哪些链接是死链,死链查询,网站死链检测查询工具,网站死链检查等，帮您快速找到死链接,提升网站链接质量，帮助用户快速排查死链接更利于页面链接优化。死链接 -
+                        也称无效链接，即那些不可达到的链接。</p></div>
+                <div class="accordion-group"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/script/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/static/script/bootstrap.min.js" type="text/javascript"></script>
+<script src="/static/script/tool.js" type="text/javascript"></script>
+<script src="/static/script/layer/layer.js"></script>
+<script type="text/javascript">
+    function get_data(page) {
+        var obj = {};
+        obj['page'] = page;
+        obj['url'] = $("#TextArea2").val();
+        if (!obj['url']) {
+            layer.msg("请输入链接");
+            return false;
+        }
+        obj['limit'] = 20;
+        obj['type'] = 'check_url';
+        layer.msg("正在获取数据中", {time: 30000});
+        $.get("/api/", $.param(obj, true), function (res) {
+            if (res.code == 400) {
+                layer.msg(res.msg);
+                return false;
+            }
+            $("#data").empty();
+            $("#data").append(res.data);
+            //$("#totla_num").text(res.count);
+            //$("#total_no").text(res.count_no);
+            $("#count").empty();
+            $("#count").append(res.count_str);
+            var eachcount = 0;
+            $.each(res.obj, function (i, val) {
+                eachcount++;
+                //console.log(val);
+                layer.closeAll();
+                layer.msg("正在检测链接，请稍候……");
+                $.get("/api/", {type: 'single_url', id: val.id, url: val.url}, function (ooo) {
+                    //var ooo = JSON.parse(ooo);
+                    if(ooo.title){
+                        $("#tr_title_" + val.id).text(ooo.title);
+                    }
+                    if (ooo.code == 200 || ooo.code == 301 || ooo.code == 302 || ooo.code == 307) {
+                        $("#tr_" + val.id).html("<img src='/static/images/ok.png'> <font color='green'><strong>" + ooo.code + "</strong></font>");
+                    } else if (ooo.code == 404 || ooo.code == 500) {
+                        $("#tr_" + val.id).html("<img src='/static/images/error.png'> <font color='red'><strong>" + ooo.code + "</strong></font>");
+                    } else {
+                        $("#tr_" + val.id).html('<strong>'+ooo.code+'</strong>');
+                    }
+
+                })
+            })
+            if (eachcount >= res.total_count) {
+                layer.msg("检测完成，共检测" + res.total_count + "了个链接！");
+            }
+        })
+    }
+</script>
+<style>
+    .owner {
+        max-width: 500px
+    }
+</style>
+{include file="nav" /}
+{include file="link" /}
+{include file="footer" /}
+</body>
+</html>

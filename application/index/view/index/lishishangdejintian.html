@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>{$Think.config.web.lishishangdejintian.title}</title>
+    <meta name="applicable-device" content="pc,mobile"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="{$Think.config.web.lishishangdejintian.keywords}"/>
+    <meta name="description" content="{$Think.config.web.lishishangdejintian.description}"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon"/>
+    <link href="/static/style/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/style/tool.css" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    {:$Think.config.web.header}
+</head>
+<body>{include file="header" /}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                    <div class="panel">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        历史上的今天 <span class="greentag">{:date('Y年m月d日')}</span>
+                                    </h3>
+                                </div>
+                                <table class="table table-bordered table-striped">
+                                    {foreach $list as $key=>$vo}
+                                    <tr><td><span class="lx_name">{$vo.date}</span><span class="lx_value">{$vo.title}</span></td></tr>
+                                    {/foreach}
+                                </table>
+                            </div>
+                    </div>
+                </div>
+                <div class="alert alert alert-success alert-dismissible"><h4>历史今天</h4><p>今天发生在历史的那些事！</p></div>
+                <div class="accordion-group"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/script/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/static/script/bootstrap.min.js" type="text/javascript"></script>
+<script src="/static/script/tool.js" type="text/javascript"></script>
+{include file="nav" /}
+{include file="footer" /}
+</body>
+</html>

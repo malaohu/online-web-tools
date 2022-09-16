@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /><title>{$Think.config.web.tuya.title}</title><meta name="applicable-device" content="pc,mobile" /><meta http-equiv="Cache-Control" content="no-transform" /><meta http-equiv="Cache-Control" content="no-siteapp" /><meta name="keywords" content="{$Think.config.web.tuya.keywords}" /><meta name="description" content="{$Think.config.web.tuya.description}" /><meta name="renderer" content="webkit" /><meta name="apple-mobile-web-app-capable" content="yes" /><link rel="icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon" /><link href="/static/style/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="/static/style/tool.css" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script><script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->{:$Think.config.web.header}</head><body>{include file="header" /}
+<div class="container"><div class="row"><div class="col-md-12"><div class="accordion" id="accordion2"><div class="accordion-group"><!-- <div><a href="https://www.aliyun.com/minisite/goods?userCode=eaborev5" target="_blank" rel="nofollow"><img src="http://zxgj.16400.cn/static/images/ali.jpg"></a></div> -->
+<ul class="nav nav-tabs hbflag"><li role="presentation" class="active"><a href="/tuya/">在线涂鸦画板</a></li><li role="presentation"><a href="/shizhong/">在线时钟</a></li><li role="presentation"><a href="/worldtime/">世界各地时间</a></li><li role="presentation"><a href="/capital/">世界各国首都查询</a></li><li role="presentation"><a href="/currency/">世界各地货币查询</a></li><li role="presentation"><a href="/areacode/">世界各国区号时差查询</a></li><li role="presentation"><a href="/jieri/">世界节日查询</a></li><li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button" aria-haspopup="true" aria-expanded="false">更多工具<span class="caret"> </span></a><ul class="dropdown-menu"><li role="presentation"><a href="/shaoshuminzu/">全国少数民族分布查询</a></li><li role="presentation"><a href="/chaodai/">中国历史朝代时间查询表</a></li><li role="presentation"><a href="/tesufuhao/">特殊符号大全</a></li></ul></li></ul><div class="panel">
+
+<div style="width: 100%;"><canvas id="canvas" width="1000" height="500">您的浏览器不支持CANVAS</canvas></div>
+			<div class="tool">
+				<div class="color">
+					<div style="background:#000;" data-color="#000" class="active"></div>
+					<div style="background:#f00;" data-color="#f00"></div>
+					<div style="background:#0f0;" data-color="#0f0"></div>
+					<div style="background:#00f;" data-color="#00f"></div>
+					<div style="background:#ff0;" data-color="#ff0"></div>
+					<div style="background:#0ff;" data-color="#0ff"></div>
+					<div style="background:#f0f;" data-color="#f0f"></div>
+					<div style="background:#fff;" data-color="#fff"></div>
+				</div>
+				
+				<div class="size">
+					<div class="active" data-size="3" ><span style="width:3px;" ></span></div>
+					<div data-size="6" ><span style="width:6px;" ></span></div>
+					<div data-size="9" ><span style="width:9px;" ></span></div>
+					<div data-size="12"><span style="width:12px;"></span></div>
+					<div data-size="15"><span style="width:15px;"></span></div>
+					<div data-size="20"><span style="width:20px;"></span></div>
+					<div data-size="25"><span style="width:25px;"></span></div>
+				</div>
+				
+				<div class="btntool">
+					<input type="button" value="清 空" class="btn btn-primary" onclick="clearAll();" />
+				</div>
+				<div class="btntool">
+					<input type="button" value="撤 销" class="btn btn-danger" title="ctrl+z" onclick="re_draw();" />
+				</div>
+				<div class="btntool">
+					<input type="button" value="保 存" class="btn btn-primary" title="ctrl+s" onclick="saveImageInfo();" />
+				</div>
+			</div>
+	</div>
+	</div></div><div class="alert alert alert-success alert-dismissible"><h4>在线涂鸦画板</h4><p>在线涂鸦画板为您提供在线画画,在线涂鸦,在线画布涂鸦,涂鸦自定义颜色,调色功能,涂鸦颜色选择功能,在这里您可以尽情的发挥您的画画艺术天赋,画出您想要的涂鸦之作,涂鸦完成后可以保存到本地。</p></div> <div class="accordion-group"> </div></div></div></div></div><script src="/static/script/jquery-1.11.3.min.js" type="text/javascript"></script><script src="/static/script/bootstrap.min.js" type="text/javascript"></script><script src="/static/script/tool.js" type="text/javascript"></script>
+	<script src="/static/script/huaban/zepto.min.js"></script>
+	<script src="/static/script/huaban/ocanvas.min.js"></script>
+	<script src="/static/script/huaban/ga.js"></script>
+	<script type="text/javascript" src="/static/script/huaban/hotkeys.js"></script>
+			<script type="text/javascript">
+				hotkeys('ctrl+z', function(){
+				    re_draw();
+				});
+				hotkeys('ctrl+s', function(e){
+					e.preventDefault();
+				    saveImageInfo();
+				});
+			</script>
+ 
+ <style>
+.tool{position:absolute; top:200px; left:16px; border:solid 1px #aaa; background-color:#eee; border-radius:5px; padding-right:5px;}
+.tool .color {float:left; margin:5px; width:30px;}
+.tool .color div{width:24px; height:24px; border:solid 2px #aaa; margin-bottom:5px; opacity:0.5;}
+.tool .color div:hover{opacity:1; cursor:pointer;}
+.tool .color .active{opacity:1; border:solid 2px #000;}
+
+.tool .size {float:left; margin:5px; width:30px; margin-left:0;}
+.tool .size div{width:30px; height:30px; border:solid 2px #aaa; margin-bottom:5px; opacity:0.5;}
+.tool .size div:hover{opacity:1; cursor:pointer;}
+.tool .size .active{opacity:1; border:solid 2px #000;}
+.tool .size span{display:block; margin:3px auto; height:24px; background-color:black;}
+
+.btntool {clear:both; margin-bottom:5px; text-align:center;}
+.btntool input {padding:3px 15px;}
+#canvas {
+    border:1px solid #E5E5DB;width: 100%;
+}
+</style>
+ {include file="nav" /}
+{include file="link" /}
+{include file="footer" /}
+</body></html>

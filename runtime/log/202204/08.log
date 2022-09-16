@@ -1,0 +1,20 @@
+---------------------------------------------------------------
+
+[2022-04-08T08:09:01+08:00] 95.217.109.231 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-08T08:09:02+08:00] 95.217.109.231 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-08T08:09:06+08:00] 95.217.109.231 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-08T08:27:16+08:00] 117.159.10.46 GET tool.ruyo.net/_visitcount?siteId=54&type=3&articleId=319256
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/_visitcount.html
+---------------------------------------------------------------
+
+[2022-04-08T08:27:18+08:00] 117.159.10.46 GET tool.ruyo.net/_visitcount?siteId=54&type=3&articleId=319256
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/_visitcount.html

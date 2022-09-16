@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>{$Think.config.web.chaicp.title}</title>
+    <meta name="applicable-device" content="pc,mobile"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="{$Think.config.web.chaicp.keywords}"/>
+    <meta name="description" content="{$Think.config.web.chaicp.description}"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon"/>
+    <link href="/static/style/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/style/tool.css" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    {:$Think.config.web.header}
+</head>
+<body>{include file="header" /}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                    <ul class="nav nav-tabs hbflag">
+                        <li role="presentation"><a href="/checkweixin/">微信域名检测工具</a></li>
+                        <li role="presentation"><a href="/htaccess2nginx/">htaccess转nginx</a></li>
+                        <li role="presentation"><a href="/shortcut/">生成桌面快捷方式</a></li>
+                        <li role="presentation"><a href="/px2rem/">rem与px转换工具</a></li>
+                        <li role="presentation"><a href="/favicon/">在线制作ico图标</a></li>
+                        <li role="presentation"><a href="/createmeta/">生成网页Meta标签</a></li>
+                        <li role="presentation" class="active"><a href="/chaicp/"> ICP网站备案查询</a></li>
+                        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                                                                    href="javascript:;" role="button"
+                                                                    aria-haspopup="true" aria-expanded="false">更多工具<span
+                                class="caret"> </span></a>
+                            <ul class="dropdown-menu">
+                                <li role="presentation"><a href="/refresh/">在线定时刷新网址</a></li>
+                                <li role="presentation"><a href="/tiaoseban/">在线调色板</a></li>
+                                <li role="presentation"><a href="/gzip/">网站Gzip压缩检测</a></li>
+                                <li role="presentation"><a href="/checkurl/">网站死链检测</a></li>
+                                <li role="presentation"><a href="/whois/">Whois查询工具</a></li>
+                                <li role="presentation"><a href="/chameta/">Meta标签优化分析</a></li>
+                                <li role="presentation"><a href="/checkkeyword/">网页关键词密度检测</a></li>
+                                <li role="presentation"><a href="/webstatus/">HTTP状态码查询</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="panel">
+                        <form id="form1" class="form-horizontal" method="post">
+                            <div class="input-group mb5" style="width:85%"><input class="form-control" type="text"
+                                                                                  name="icp" id="icp" value="{$url}"
+                                                                                  placeholder="请输入您要查询的域名，如：{$_SERVER.HTTP_HOST}"/><span
+                                    class="input-group-btn"><button class="btn btn-success" type="submit" id="get_remote">查询ICP备案</button></span>
+                            </div>
+                            {if $icp}
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        ICP备案查询结果，域名 <span class="greentag">{$url}</span> ICP备案信息
+                                    </h3>
+                                </div>
+                                    <table class="table table-bordered table-striped">
+                                        {if $code!='200'}
+                                        <tr><td><font color="red">{$icp.msg}</font></td></tr>
+                                        {else/}
+                                        {foreach $icp as $name=>$value}
+                                            <tr><td><span class="lx_name">{$name}</span><span class="lx_value">{$value}</span></td></tr>
+                                        {/foreach}
+                                        {/if}
+                                    </table>
+                            </div>
+                            {/if}
+                            <div class="form-group" style="margin-top:50px">
+                                <div class="col-sm-12"><p>最近查询： </p></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="alert alert alert-success alert-dismissible"><h4>ICP备案查询</h4>
+                    <p>网站ICP备案查询，批量查询网站备案。查看网站是否已经备案及备案情况</p></div>
+                <div class="accordion-group"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/script/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/static/script/bootstrap.min.js" type="text/javascript"></script>
+<script src="/static/script/tool.js" type="text/javascript"></script>
+{include file="nav" /}
+{include file="footer" /}
+</body>
+</html>

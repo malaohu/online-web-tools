@@ -1,0 +1,48 @@
+---------------------------------------------------------------
+
+[2022-06-01T10:54:34+08:00] 222.186.43.77 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-06-01T15:09:59+08:00] 40.77.167.38 GET tool.ruyo.net/sitemap.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-06-01T15:25:33+08:00] 207.46.13.179 GET tool.ruyo.net/atom.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/atom.html
+---------------------------------------------------------------
+
+[2022-06-01T15:50:14+08:00] 157.55.39.167 GET tool.ruyo.net/sitemap_index.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap_index.html
+---------------------------------------------------------------
+
+[2022-06-01T16:14:57+08:00] 207.46.13.66 GET tool.ruyo.net/sitemap.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-06-01T16:17:59+08:00] 172.247.38.233 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-06-01T16:37:16+08:00] 40.77.167.36 GET tool.ruyo.net/sitemaps.xml
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemaps.html
+---------------------------------------------------------------
+
+[2022-06-01T16:42:09+08:00] 207.46.13.66 GET tool.ruyo.net/sitemap.xml.gz
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/sitemap.html
+---------------------------------------------------------------
+
+[2022-06-01T19:28:11+08:00] 184.229.196.177 GET tool.ruyo.net//index.php?function=call_user_func_array&s=%2FIndex%2F%5Cthink%5Capp%2Finvokefunction&vars%5B0%5D=printf&vars%5B1%5D%5B%5D=77770123
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/Index.html
+---------------------------------------------------------------
+
+[2022-06-01T19:28:14+08:00] 204.226.19.96 POST tool.ruyo.net//index.php?s=captcha
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/captcha.html
+---------------------------------------------------------------
+
+[2022-06-01T19:28:18+08:00] 107.13.103.251 POST tool.ruyo.net//?s=captcha&test=-1
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/captcha.html
+---------------------------------------------------------------
+
+[2022-06-01T19:38:23+08:00] 180.101.45.23 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html

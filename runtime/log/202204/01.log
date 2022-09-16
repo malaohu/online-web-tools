@@ -1,0 +1,48 @@
+---------------------------------------------------------------
+
+[2022-04-01T00:36:56+08:00] 112.47.58.209 GET tool.ruyo.net/data/admin/allowurl.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/data.html
+---------------------------------------------------------------
+
+[2022-04-01T02:21:30+08:00] 157.55.39.79 GET tool.ruyo.net/60.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/60.html
+---------------------------------------------------------------
+
+[2022-04-01T06:05:42+08:00] 157.55.39.79 GET tool.ruyo.net/1.6.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/1.html
+---------------------------------------------------------------
+
+[2022-04-01T06:17:33+08:00] 207.46.13.162 GET tool.ruyo.net/90.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/90.html
+---------------------------------------------------------------
+
+[2022-04-01T08:11:16+08:00] 207.46.13.75 GET tool.ruyo.net/1.3.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/1.html
+---------------------------------------------------------------
+
+[2022-04-01T08:44:41+08:00] 148.251.121.247 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-01T08:44:44+08:00] 148.251.121.247 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-01T08:44:47+08:00] 148.251.121.247 GET tool.ruyo.net/ads.txt
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/ads.html
+---------------------------------------------------------------
+
+[2022-04-01T16:52:25+08:00] 207.46.13.75 GET tool.ruyo.net/5.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/5.html
+---------------------------------------------------------------
+
+[2022-04-01T22:01:09+08:00] 66.249.79.227 GET tool.ruyo.net/50000.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/50000.html
+---------------------------------------------------------------
+
+[2022-04-01T22:59:59+08:00] 66.249.79.225 GET tool.ruyo.net/18.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/18.html
+---------------------------------------------------------------
+
+[2022-04-01T23:58:19+08:00] 207.46.13.208 GET tool.ruyo.net/1.7.html
+[ error ] [0]模板文件不存在:/data/wwwroot/tool.ruyo.net/application/index/view/index/1.html
